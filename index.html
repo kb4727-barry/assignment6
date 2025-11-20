@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Joy of Coding</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>The Joy of Coding</h1>
+    <h1 id="mainTitle">The Joy of Coding</h1>
+    <button id="changeTextBtn">Change Title</button>
+    <button id="colorBtn">Change Background Box</button>
+    <button id="menuToggle" class="menu-icon">
+      <svg width="30" height="30" viewBox="0 0 24 24">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
     <nav>
-      <ul>
+      <ul id="navMenu">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="aboutcode.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -18,56 +26,40 @@
     </nav>
   </header>
 
+  <p id="dayMessage" style="font-weight:bold; text-align:center; margin-bottom:20px;"></p>
+
+  <div id="colorBox" style="width:100%; height:80px; background:#FF69B4; margin-bottom:20px; border-radius:8px;"></div>
+
   <main>
     <div class="grid">
       <article>
         <h2>Why I Love Coding</h2>
-
         <p>Coding has become one of my favorite things to do because it gives me a feeling of excitement and accomplishment that’s hard to describe. When I write code and see it actually work, it’s like an adrenaline rush. I love that moment when everything finally runs perfectly after spending time trying to fix an error or understand why something wasn’t working. It’s the kind of satisfaction that keeps me coming back to learn more.</p>
-
         <p>What fascinates me most about computer science is how it combines logic and creativity. Every line of code has to follow specific rules, but there’s still so much room to be creative in how you solve problems. Two people can write completely different programs that do the same thing, and that’s what makes coding so interesting. It’s like solving a puzzle, except the pieces are ideas and logic.</p>
-
         <p>Sometimes coding can be frustrating. A small typo can cause an entire program to break. But instead of giving up, I’ve learned to be patient and keep trying until I find the mistake. When I finally fix it, the feeling is amazing. Debugging has taught me persistence and attention to detail, and it’s shown me that failure is just part of the process of learning.</p>
-
         <p>What I also love is how computers themselves work. It’s incredible to think that everything we do online like watching videos, playing games, using apps, all come down to lines of code and logical instructions. Computers do exactly what we tell them to do, and when something goes wrong, it’s usually because we didn’t tell them the right thing. That makes me respect how powerful and precise technology really is.</p>
-
         <p>Computer science feels like the perfect balance between creativity and problem-solving. It challenges me to think critically while also letting me build things that didn’t exist before. I love the idea that with enough knowledge, I could create something useful, fun, or even life-changing. Every time I code, I feel like I’m learning a new way to communicate but with machines instead of people. That’s what keeps me excited about computer science — the endless possibilities of what I can create next.</p>
       </article>
 
       <aside>
-        <figure>
-          <img src="code.jpg" alt="Laptop screen showing code">
-          <figcaption class="caption">Writing lines of code for a web project</figcaption>
-        </figure>
-
-        <figure>
-          <img src="piccode.jpg" alt="Coding on a desktop screen">
-          <figcaption class="caption">Code </figcaption>
-        </figure>
-
-        <figure>
-          <img src="project.jpg" alt="Coding project screenshot">
-          <figcaption class="caption"> HTML/CSS project</figcaption>
-        </figure>
-
-        <figure>
-          <img src="projectpic.jpg" alt="Project design preview">
-          <figcaption class="caption">Custom Logo</figcaption>
-        </figure>
-
-        <figure>
-          <img src="csspic.jpg" alt="CSS styling example">
-          <figcaption class="caption">Experimenting with CSS styles</figcaption>
-        </figure>
+        <img src="code.jpg" alt="Laptop screen showing code">
+        <p class="caption">Writing lines of code for a web project</p>
+        <img src="piccode.jpg" alt="Coding on a desktop screen">
+        <p class="caption">Code</p>
+        <img src="project.jpg" alt="Coding project screenshot">
+        <p class="caption">HTML/CSS project</p>
+        <img src="projectpic.jpg" alt="Project design preview">
+        <p class="caption">Custom Logo</p>
+        <img src="csspic.jpg" alt="CSS styling example">
+        <p class="caption">Experimenting with CSS styles</p>
       </aside>
     </div>
   </main>
 
   <footer>
-    <p> 2025 Kadiatou Barry</p>
+    <p>2025 Kadiatou Barry</p>
   </footer>
 </body>
 </html>
-
 
 
